@@ -1,0 +1,38 @@
+.inspector {
+    background-color: var(--c-80);
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+}
+
+.layers {
+    /* background-color: var(--c-20); */
+    width: 100%;
+    height: auto;
+}
+.layer-elements {
+    width: 100%;
+    padding: 0 var(--s-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+}
+[data-layerState] {
+    cursor: pointer;
+    background-color: var(--c-50);
+    width: 100%;
+    height: var(--h-24);
+    padding: 0 var(--s-8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+[data-layerState="active"] {
+    outline: 2px solid var(--c-a-85);
+}

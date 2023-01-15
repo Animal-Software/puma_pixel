@@ -1,0 +1,109 @@
+nav {
+    position: relative;
+    background-color: var(--c-90);
+    width: 100%;
+    height: var(--h-40);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titlebar-logo {
+    pointer-events: none;
+    width: var(--h-40);
+    height: var(--h-40);
+    display: grid;
+    place-items: center;
+}
+
+.titlebar-logo > img {
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+.titlebar-menu {
+    width: fit-content;
+    height: var(--h-mid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > span {
+    position: relative;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.menu-item > span:hover {
+    background-color: var(--c-100);
+    text-decoration: underline;
+}
+
+.menu-dropdown {
+    background-color: var(--c-50);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    outline: var(--s-2) solid var(--c-10);
+}
+
+.menu-dropdown::before {
+    position: absolute;
+    content: '';
+    background-color: var(--c-80);
+    width: 100%;
+    height: calc(100% - 2px);
+    border: var(--s-2) solid var(--c-100);
+}
+
+.menu-dropdown > p {
+    cursor: pointer;
+    width: 100%;
+    height: var(--h-30);
+    padding: 0 var(--s-16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.menu-dropdown > p:hover {
+    background-color: var(--c-90);
+}
+
+.titlebar-controls {
+    height: var(--h-40);
+    display: flex;
+}
+
+.titlebar-controls > span {
+    cursor: pointer;
+    width: var(--h-40);
+    height: var(--h-40);
+    display: grid;
+    place-items: center;
+}
+
+.titlebar-controls img {
+    width: 8px;
+    height: 8px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.titlebar-controls > span:hover {
+    background-color: var(--c-100);
+}

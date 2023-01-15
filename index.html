@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <script src="./main.js" type="module" defer></script>
+    <link rel="shortcut icon" href="./img/logo/grouchy.png" type="image/png">
+    <title>Puma Pixel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="titlebar-logo"><img src="./img/logo/grouchy2.png" alt="logo"></span>
+            <div class="titlebar-menu">
+                <div class="menu-item">
+                    <span>File</span>
+                    <!-- <div class="menu-dropdown">
+                        <p>New<span>N</span></p>
+                        <p id="menu_open">Open...<span>O</span></p>
+                        <p>Open Recent<span>></span></p>
+                        <p>Save<span>S</span></p>
+                        <p>Refresh<span>R</span></p>
+                    </div> -->
+                </div>
+                <div class="menu-item">
+                    <span>Edit</span>
+                </div>
+                <div class="menu-item">
+                    <span>View</span>
+                </div>
+                <div class="menu-item">
+                    <span>Help</span>
+                </div>
+            </div>
+            <div class="titlebar-controls">
+                <span><img src="./img/controls/light/minimize.png" alt="_"></span> <!-- MINIMIZE -->
+                <span><img src="./img/controls/light/maximize.png" alt="[]"></span> <!-- MAXIMIZE -->
+                <span><img src="./img/controls/light/close.png" alt="x"></span> <!-- CLOSE -->
+            </div>
+        </nav>
+        <section class="tool-options">
+            <span>s</span>
+        </section>
+    </header>
+    <main>
+        <section class="toolbar">
+            <span title="move" data-toolName="move" data-toolState="active"><img src="./img/toolbar/light/move.png" alt="move"></span>
+            <span title="selection" data-toolName="select" data-toolState="inactive"><img src="./img/toolbar/light/select.png" alt="select"></span>
+            <span title="pen" data-toolName="pen" data-toolState="inactive"><img src="./img/toolbar/light/pen.png" alt="pen"></span>
+            <span title="eraser" data-toolName="eraser" data-toolState="inactive"><img src="./img/toolbar/light/rubber.png" alt="eraser"></span>
+            <span title="square" data-toolName="square" data-toolState="inactive"><img src="./img/toolbar/light/square.png" alt="square"></span>
+            <span title="circle" data-toolName="circle" data-toolState="inactive"><img src="./img/toolbar/light/circle.png" alt="circle"></span>
+            <span title="fill" data-toolName="bucket" data-toolState="inactive"><img src="./img/toolbar/light/bucket.png" alt="fill"></span>
+            <span title="color pick" data-toolName="eyedrop" data-toolState="inactive"><img src="./img/toolbar/light/eyedrop.png" alt="pick"></span>
+            <span title="text" data-toolName="text" data-toolState="inactive"><img src="./img/toolbar/light/text.png" alt="text"></span>
+            <span title="hand" data-toolName="hand" data-toolState="inactive"><img src="./img/toolbar/light/hand.png" alt="hand"></span>
+            <span title="zoom" data-toolName="zoom" data-toolState="inactive"><img src="./img/toolbar/light/loupe.png" alt="zoom"></span>
+        </section>
+        <section class="workspace">
+            <canvas id="canvas"></canvas>
+        </section>
+        <section class="inspector">
+            <section>
+                <h3>Color</h3>
+            </section>
+            <section class="layers">
+                <h3>Layers</h3>
+                <div class="layer-elements">
+                    <span data-layerIndex="2" data-layerState="inactive">Layer 2</span>
+                    <span data-layerIndex="1" data-layerState="inactive">Layer 1</span>
+                    <span data-layerIndex="0" data-layerState="active">Layer 0</span>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
